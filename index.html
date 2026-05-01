@@ -22,275 +22,176 @@
       margin-bottom: 10px;
       padding: 6px 0 4px;
     }
-    .title-block .line1 {
-      font-family: 'Georgia', serif;
-      font-size: 1.15rem;
-      color: #e63946;
-      font-weight: bold;
-    }
-    .title-block .line2 {
-      font-family: 'Impact', fantasy;
-      font-size: 1.15rem;
-      color: #2a9d8f;
-    }
-    .title-block .line3 {
-      font-family: 'Courier New', monospace;
-      font-size: 1.05rem;
-      color: #e76f51;
-    }
-    .title-block .line4 {
-      font-family: 'Trebuchet MS', sans-serif;
-      font-size: 1.05rem;
-      color: #8338ec;
-      font-style: italic;
-    }
-    .title-block .line5 {
-      font-family: 'Comic Sans MS', cursive;
-      font-size: 1.2rem;
-      color: #fb5607;
-      font-weight: bold;
-    }
+    .title-block .line1 { font-family: 'Georgia', serif; font-size: 1.15rem; color: #e63946; font-weight: bold; }
+    .title-block .line2 { font-family: 'Impact', fantasy; font-size: 1.15rem; color: #2a9d8f; }
+    .title-block .line3 { font-family: 'Courier New', monospace; font-size: 1.05rem; color: #e76f51; }
+    .title-block .line4 { font-family: 'Trebuchet MS', sans-serif; font-size: 1.05rem; color: #8338ec; font-style: italic; }
+    .title-block .line5 { font-family: 'Comic Sans MS', cursive; font-size: 1.2rem; color: #fb5607; font-weight: bold; }
+
     .title-meta {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-top: 4px;
+      display: flex; justify-content: center; align-items: center;
+      gap: 8px; flex-wrap: wrap; margin-top: 4px;
     }
-    .title-meta .doctor {
-      font-size: 11px;
-      color: #2a9d8f;
-      font-weight: bold;
-    }
+    .title-meta .doctor { font-size: 11px; color: #2a9d8f; font-weight: bold; }
     .title-meta .warn {
-      background: #fff3cd;
-      border: 1.5px solid #f59e0b;
-      border-radius: 14px;
-      padding: 2px 10px;
-      font-size: 10px;
-      color: #92400e;
+      background: #fff3cd; border: 1.5px solid #f59e0b;
+      border-radius: 14px; padding: 2px 10px; font-size: 10px; color: #92400e;
     }
+
+    .quicklinks {
+      display: flex; gap: 8px; justify-content: center;
+      margin: 8px 0 10px;
+    }
+    .quicklinks a {
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+      flex: 1; text-align: center;
+      background: #8338ec; color: #fff;
+      border-radius: 10px; padding: 8px 6px;
+      font-size: 13px; font-weight: bold;
+      text-decoration: none;
+    }
+    .quicklinks a:nth-child(2) { background: #2a9d8f; }
 
     .card {
-      background: #ffffff;
-      border: 2.5px solid #8338ec;
-      border-radius: 14px;
-      padding: 12px;
-      margin-bottom: 14px;
+      background: #ffffff; border: 2.5px solid #8338ec;
+      border-radius: 14px; padding: 12px; margin-bottom: 14px;
     }
     .card-title {
-      font-size: 13px;
-      font-weight: bold;
-      color: #8338ec;
-      margin-bottom: 10px;
-      border-bottom: 1.5px dashed #8338ec;
-      padding-bottom: 5px;
+      font-size: 13px; font-weight: bold; color: #8338ec;
+      margin-bottom: 10px; border-bottom: 1.5px dashed #8338ec; padding-bottom: 5px;
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
     }
 
-    .param-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
+    .param-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
     .param-box label {
-      display: block;
-      font-size: 12px;
-      font-weight: bold;
-      color: #e63946;
-      margin-bottom: 4px;
+      display: block; font-size: 12px; font-weight: bold; color: #e63946; margin-bottom: 4px;
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
     }
-    .input-wrap {
-      display: flex;
-      align-items: center;
-      border: 2px solid #fb5607;
-      border-radius: 8px;
-      overflow: hidden;
-    }
+    .input-wrap { display: flex; align-items: center; border: 2px solid #fb5607; border-radius: 8px; overflow: hidden; }
     .input-wrap:focus-within { border-color: #8338ec; }
     .input-wrap input {
-      flex: 1;
-      border: none;
-      outline: none;
+      flex: 1; border: none; outline: none;
       font-family: 'Comic Sans MS', cursive;
-      font-size: 16px;
-      font-weight: bold;
-      color: #222;
-      padding: 7px 10px;
-      width: 100%;
+      font-size: 16px; font-weight: bold; color: #222; padding: 7px 10px; width: 100%;
     }
     .input-wrap span {
-      padding: 0 8px;
-      color: #888;
-      font-size: 12px;
-      background: #f9f9f9;
-      border-left: 2px solid #fb5607;
-      white-space: nowrap;
+      padding: 0 8px; color: #888; font-size: 12px;
+      background: #f9f9f9; border-left: 2px solid #fb5607; white-space: nowrap;
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    }
+
+    .age-row { margin-bottom: 10px; }
+    .age-row label {
+      display: block; font-size: 12px; font-weight: bold; color: #e63946; margin-bottom: 4px;
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    }
+    .age-row select {
+      width: 100%; font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+      font-size: 13px; padding: 7px 10px;
+      border: 2px solid #fb5607; border-radius: 8px; outline: none; color: #222;
     }
 
     .bsa-display {
-      background: #f0fdf4;
-      border: 2px solid #2a9d8f;
-      border-radius: 8px;
-      padding: 6px 12px;
-      margin-bottom: 10px;
-      display: none;
+      background: #f0fdf4; border: 2px solid #2a9d8f;
+      border-radius: 8px; padding: 6px 12px; margin-bottom: 10px; display: none;
     }
     .bsa-display.show { display: flex; align-items: center; gap: 12px; }
-    .bsa-display .bsa-label { font-size: 11px; color: #2a9d8f; font-weight: bold; }
-    .bsa-display .bsa-value { font-size: 20px; font-weight: bold; color: #e63946; }
+    .bsa-display .bsa-label { font-size: 11px; color: #2a9d8f; font-weight: bold; font-family: 'Trebuchet MS', 'Segoe UI', sans-serif; }
+    .bsa-display .bsa-value { font-size: 20px; font-weight: bold; color: #e63946; font-family: 'Comic Sans MS', cursive; }
     .bsa-display .bsa-formula { font-size: 10px; color: #666; font-family: monospace; }
 
     .section-label {
-      font-size: 12px;
-      font-weight: bold;
-      color: #2a9d8f;
-      margin-bottom: 6px;
-      margin-top: 2px;
+      font-size: 12px; font-weight: bold; color: #2a9d8f;
+      margin-bottom: 6px; margin-top: 2px;
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
     }
 
-    .btn-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 10px;
-    }
+    .btn-group { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
     .btn-group button {
-      font-family: 'Comic Sans MS', cursive;
-      background: #ffffff;
-      border: 2px solid #8338ec;
-      border-radius: 8px;
-      color: #8338ec;
-      padding: 6px 12px;
-      font-size: 12px;
-      cursor: pointer;
-      transition: all 0.15s;
-      line-height: 1.3;
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+      background: #ffffff; border: 2px solid #8338ec;
+      border-radius: 8px; color: #8338ec;
+      padding: 6px 12px; font-size: 12px; cursor: pointer;
+      transition: all 0.15s; line-height: 1.3;
     }
     .btn-group button:hover { background: #f3eeff; }
-    .btn-group button.active {
-      background: #8338ec;
-      color: #ffffff;
-      font-weight: bold;
-    }
+    .btn-group button.active { background: #8338ec; color: #ffffff; font-weight: bold; }
 
     .hidden { display: none !important; }
 
-    .action-row {
-      display: flex;
-      gap: 10px;
-      margin-top: 8px;
-    }
+    .action-row { display: flex; gap: 10px; margin-top: 8px; }
     .btn-calc {
-      flex: 1;
-      font-family: 'Comic Sans MS', cursive;
-      background: #e63946;
-      border: none;
-      border-radius: 10px;
-      color: white;
-      font-size: 14px;
-      font-weight: bold;
-      padding: 11px;
-      cursor: pointer;
-      transition: opacity 0.2s;
+      flex: 1; font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+      background: #e63946; border: none; border-radius: 10px;
+      color: white; font-size: 14px; font-weight: bold;
+      padding: 11px; cursor: pointer; transition: opacity 0.2s;
     }
     .btn-calc:hover { opacity: 0.85; }
     .btn-reset {
-      font-family: 'Comic Sans MS', cursive;
-      background: #ffffff;
-      border: 2px solid #fb5607;
-      border-radius: 10px;
-      color: #fb5607;
-      font-size: 13px;
-      padding: 11px 14px;
-      cursor: pointer;
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+      background: #ffffff; border: 2px solid #fb5607;
+      border-radius: 10px; color: #fb5607;
+      font-size: 13px; padding: 11px 14px; cursor: pointer;
     }
     .btn-reset:hover { background: #fff3ee; }
 
     .error-box {
-      background: #fff0f0;
-      border: 2px solid #e63946;
-      border-radius: 8px;
-      color: #e63946;
-      padding: 8px 12px;
-      margin-top: 10px;
-      font-size: 12px;
-      display: none;
+      background: #fff0f0; border: 2px solid #e63946;
+      border-radius: 8px; color: #e63946;
+      padding: 8px 12px; margin-top: 10px; font-size: 12px; display: none;
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
     }
     .error-box.show { display: block; }
 
     .result-card {
-      background: #ffffff;
-      border: 2.5px solid #2a9d8f;
-      border-radius: 14px;
-      padding: 14px 12px;
-      margin-bottom: 14px;
-      display: none;
+      background: #ffffff; border: 2.5px solid #2a9d8f;
+      border-radius: 14px; padding: 14px 12px; margin-bottom: 14px; display: none;
     }
     .result-card.show { display: block; }
 
-    .result-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-    }
+    .result-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
     .result-header .title {
-      font-size: 13px;
-      font-weight: bold;
-      color: #2a9d8f;
+      font-size: 13px; font-weight: bold; color: #2a9d8f;
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
     }
     .result-header .validated {
-      background: #f0fdf4;
-      border: 1.5px solid #2a9d8f;
-      border-radius: 10px;
-      color: #2a9d8f;
-      padding: 2px 10px;
-      font-size: 11px;
-      font-weight: bold;
+      background: #f0fdf4; border: 1.5px solid #2a9d8f;
+      border-radius: 10px; color: #2a9d8f; padding: 2px 10px; font-size: 11px; font-weight: bold;
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
     }
 
     .steps-box {
-      background: #fffbea;
-      border-left: 4px solid #f59e0b;
-      border-radius: 6px;
-      padding: 10px 12px;
-      margin-bottom: 12px;
-      font-family: monospace;
-      font-size: 11px;
-      color: #555;
-      line-height: 1.9;
-      white-space: pre-line;
+      background: #fffbea; border-left: 4px solid #f59e0b;
+      border-radius: 6px; padding: 10px 12px; margin-bottom: 12px;
+      font-family: 'Comic Sans MS', cursive;
+      font-size: 11px; color: #555; line-height: 1.9; white-space: pre-line;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 12px;
+    .note-box {
+      background: #fff3cd; border-left: 4px solid #f59e0b;
+      border-radius: 6px; padding: 8px 12px; margin-bottom: 12px;
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+      font-size: 11px; color: #92400e; line-height: 1.7;
     }
+
+    table { width: 100%; border-collapse: collapse; font-size: 12px; }
     thead tr { background: #f3eeff; }
     thead th {
-      padding: 8px 10px;
-      text-align: left;
-      color: #8338ec;
-      font-size: 11px;
-      font-weight: bold;
-      border-bottom: 2px solid #8338ec;
+      padding: 8px 10px; text-align: left; color: #8338ec;
+      font-size: 11px; font-weight: bold; border-bottom: 2px solid #8338ec;
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
     }
     tbody tr { border-bottom: 1px solid #eee; }
     tbody tr:hover { background: #fafafa; }
-    tbody td { padding: 9px 10px; color: #333; line-height: 1.4; }
-    tbody td:first-child { color: #e63946; font-weight: bold; }
-    tbody td:nth-child(2) { font-family: monospace; font-size: 11px; color: #666; }
-    tbody td:last-child { color: #2a9d8f; font-weight: bold; font-size: 13px; white-space: nowrap; }
+    tbody td { padding: 9px 10px; color: #333; line-height: 1.4; font-family: 'Comic Sans MS', cursive; }
+    tbody td:first-child { color: #e63946; font-weight: bold; font-family: 'Trebuchet MS', 'Segoe UI', sans-serif; }
+    tbody td:nth-child(2) { font-family: 'Comic Sans MS', cursive; font-size: 11px; color: #666; }
+    tbody td:last-child { color: #2a9d8f; font-weight: bold; font-size: 13px; white-space: nowrap; font-family: 'Comic Sans MS', cursive; }
 
     .footer {
-      text-align: center;
-      color: #aaa;
-      font-size: 10px;
-      padding: 12px 0 20px;
-      border-top: 1px dashed #ddd;
+      text-align: center; color: #aaa; font-size: 10px;
+      padding: 12px 0 20px; border-top: 1px dashed #ddd;
+      font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
     }
   </style>
 </head>
@@ -307,6 +208,12 @@
     <span class="doctor">Dr. Joseph Boulos</span>
     <span class="warn">⚠️ Verify all doses clinically</span>
   </div>
+</div>
+
+<!-- QUICK LINKS -->
+<div class="quicklinks">
+  <a href="https://drive.google.com/file/d/1Z_Tf3MMk-ER6eaHIMmO3NEqRo89l26xJ/view?usp=drivesdk" target="_blank">📋 Protocols</a>
+  <a href="https://drive.google.com/file/d/1P9XTbrW3EleAevZIbGZ3itHmVvMAtyGJ/view?usp=drivesdk" target="_blank">📄 Templates</a>
 </div>
 
 <!-- INPUT CARD -->
@@ -330,6 +237,27 @@
     </div>
   </div>
 
+  <!-- Age group for Infantile Leukemia -->
+  <div class="age-row hidden" id="ageRow">
+    <label>Age Group (for dose adjustment)</label>
+    <select id="ageGroup">
+      <option value="">-- Select age --</option>
+      <option value="lt6">Less than 6 months</option>
+      <option value="6to12">6 to 12 months</option>
+      <option value="gt12">More than 12 months</option>
+    </select>
+  </div>
+
+  <!-- Age group for AML -->
+  <div class="age-row hidden" id="ageRowAML">
+    <label>Age (for kg-based dosing)</label>
+    <select id="ageGroupAML">
+      <option value="">-- Select age --</option>
+      <option value="lt12">Less than 12 months</option>
+      <option value="gte12">12 months or older</option>
+    </select>
+  </div>
+
   <div class="bsa-display" id="bsaDisplay">
     <div>
       <div class="bsa-label">BSA</div>
@@ -338,31 +266,82 @@
     <div class="bsa-formula" id="bsaFormulaLive"></div>
   </div>
 
-  <div class="section-label">Protocol</div>
-  <div class="btn-group" id="protocolGroup">
-    <button onclick="selectProtocol('ALL')">ALL</button>
-    <button onclick="selectProtocol('osteosarcoma')">Osteosarcoma</button>
-    <button onclick="selectProtocol('burkitt_lymphoma')">Burkitt Lymphoma</button>
+  <div class="section-label">Disease</div>
+  <div class="btn-group" id="diseaseGroup">
+    <button onclick="selectDisease('ALL')">ALL</button>
+    <button onclick="selectDisease('ALL_relapse')">ALL Relapse</button>
+    <button onclick="selectDisease('infantile')">Infantile Leukemia</button>
+    <button onclick="selectDisease('APL')">APL</button>
+    <button onclick="selectDisease('AML')">AML</button>
+    <button onclick="selectDisease('burkitt')">Burkitt Lymphoma</button>
+    <button onclick="selectDisease('osteosarcoma')">Osteosarcoma</button>
   </div>
 
-  <!-- ALL Risk -->
-  <div id="allRiskSection" class="hidden">
-    <div class="section-label">Risk Classification</div>
-    <div class="btn-group" id="allRiskGroup">
-      <button onclick="selectRisk('low_risk')">🟢 Low Risk</button>
-      <button onclick="selectRisk('standard_risk')">🟡 Standard Risk</button>
-      <button onclick="selectRisk('high_risk')">🔴 High Risk</button>
+  <!-- ALL protocols -->
+  <div id="allSection" class="hidden">
+    <div class="section-label">Protocol</div>
+    <div class="btn-group" id="allProtocolGroup">
+      <button onclick="selectProtocol('ALL_induction')">ALL Induction</button>
+      <button onclick="selectProtocol('ALL_consolidation')">ALL Consolidation</button>
+      <button onclick="selectProtocol('ALL_block1')">1st Block</button>
+      <button onclick="selectProtocol('ALL_block2')">2nd Block</button>
+      <button onclick="selectProtocol('ALL_antipcj')">Anti-PCP</button>
+    </div>
+    <div id="allConsolidationRisk" class="hidden">
+      <div class="section-label">Risk Classification</div>
+      <div class="btn-group" id="allRiskGroup">
+        <button onclick="selectRisk('low_risk')">🟢 Low Risk</button>
+        <button onclick="selectRisk('standard_risk')">🟡 Standard Risk</button>
+        <button onclick="selectRisk('high_risk')">🔴 High Risk</button>
+      </div>
     </div>
   </div>
 
-  <!-- Burkitt Options -->
+  <!-- ALL Relapse protocols -->
+  <div id="allRelapseSection" class="hidden">
+    <div class="section-label">Protocol</div>
+    <div class="btn-group" id="allRelapseProtocolGroup">
+      <button onclick="selectProtocol('R16')">R16 Induction</button>
+      <button onclick="selectProtocol('IM1')">IM Cycle 1</button>
+      <button onclick="selectProtocol('IM2')">IM Cycle 2</button>
+      <button onclick="selectProtocol('IM3')">IM Cycle 3</button>
+      <button onclick="selectProtocol('FLAG')">FLAG</button>
+    </div>
+  </div>
+
+  <!-- Infantile Leukemia protocols -->
+  <div id="infantileSection" class="hidden">
+    <div class="section-label">Protocol</div>
+    <div class="btn-group" id="infantileProtocolGroup">
+      <button onclick="selectProtocol('infantile_induction')">Induction</button>
+      <button onclick="selectProtocol('maram')">Maram Protocol</button>
+    </div>
+  </div>
+
+  <!-- APL protocols -->
+  <div id="aplSection" class="hidden">
+    <div class="section-label">Protocol</div>
+    <div class="btn-group" id="aplProtocolGroup">
+      <button onclick="selectProtocol('APL_induction')">APL Induction</button>
+    </div>
+  </div>
+
+  <!-- AML protocols -->
+  <div id="amlSection" class="hidden">
+    <div class="section-label">Protocol</div>
+    <div class="btn-group" id="amlProtocolGroup">
+      <button onclick="selectProtocol('AML_mito_arac')">Mitoxantrone + AraC</button>
+      <button onclick="selectProtocol('AML_hd_arac')">High-dose AraC</button>
+    </div>
+  </div>
+
+  <!-- Burkitt protocols -->
   <div id="burkittSection" class="hidden">
     <div class="section-label">Risk Group</div>
     <div class="btn-group" id="burkittGroupBtns">
       <button onclick="selectBurkittGroup('group_b')">Group B</button>
       <button onclick="selectBurkittGroup('group_c')">Group C</button>
     </div>
-
     <div class="section-label">Treatment Cycle</div>
     <div class="btn-group" id="burkittCycleGroup">
       <button onclick="selectCycle('COPADM3_cycle_1')">COPADM3 C1</button>
@@ -373,7 +352,6 @@
       <button onclick="selectCycle('CYVE')">CYVE</button>
       <button onclick="selectCycle('COP')">COP Only</button>
     </div>
-
     <div class="section-label">Rituximab (High-risk only)</div>
     <div class="btn-group" id="rituximabGroup">
       <button onclick="selectRituximab(true)">Yes – High Risk</button>
@@ -385,7 +363,6 @@
     <button class="btn-calc" onclick="calculate()">🧮 Calculate Doses</button>
     <button class="btn-reset" onclick="resetAll()">↺ Reset</button>
   </div>
-
   <div class="error-box" id="errorBox"></div>
 </div>
 
@@ -396,25 +373,27 @@
     <span class="validated">✔ Validated</span>
   </div>
   <div class="steps-box" id="stepsBox"></div>
+  <div class="note-box hidden" id="noteBox"></div>
   <div id="tableWrap"></div>
 </div>
 
 <div class="footer">Dr. Joseph Boulos · Chemo Calc · Verify all doses with clinical pharmacist</div>
 
 <script>
-  let selectedProtocol   = null;
-  let selectedRisk       = null;
+  let selectedDisease      = null;
+  let selectedProtocol_    = null;
+  let selectedRisk         = null;
   let selectedBurkittGroup = null;
-  let selectedCycle      = null;
-  let selectedRituximab  = false;
+  let selectedCycle        = null;
+  let selectedRituximab    = false;
 
-  // ── BSA live update ──────────────────────────────────────
   function updateBSA() {
     const w = parseFloat(document.getElementById("weight").value);
     const h = parseFloat(document.getElementById("height").value);
     const disp = document.getElementById("bsaDisplay");
     if (w > 0 && h > 0) {
-      const bsa = Math.round(Math.sqrt((h * w) / 3600) * 100) / 100;
+      const raw = Math.sqrt((h * w) / 3600);
+      const bsa = Math.min(r(raw), 2);
       document.getElementById("bsaLive").textContent = bsa + " m²";
       document.getElementById("bsaFormulaLive").textContent =
         `√((${h} × ${w}) / 3600) = ${bsa}`;
@@ -424,23 +403,48 @@
     }
   }
 
-  // ── Selection helpers ────────────────────────────────────
-  function selectProtocol(p) {
-    selectedProtocol = p;
+  function selectDisease(d) {
+    selectedDisease = d;
+    selectedProtocol_ = null;
     selectedRisk = null;
     selectedBurkittGroup = null;
     selectedCycle = null;
-    toggleActive("protocolGroup", p === "ALL" ? 0 : p === "osteosarcoma" ? 1 : 2);
-    document.getElementById("allRiskSection").classList.toggle("hidden", p !== "ALL");
-    document.getElementById("burkittSection").classList.toggle("hidden", p !== "burkitt_lymphoma");
-    clearActive("allRiskGroup");
-    clearActive("burkittGroupBtns");
-    clearActive("burkittCycleGroup");
+
+    toggleActive("diseaseGroup",
+      ["ALL","ALL_relapse","infantile","APL","AML","burkitt","osteosarcoma"].indexOf(d));
+
+    ["allSection","allRelapseSection","infantileSection","aplSection",
+     "amlSection","burkittSection","allConsolidationRisk","ageRow","ageRowAML"]
+      .forEach(hide);
+
+    ["allProtocolGroup","allRelapseProtocolGroup","infantileProtocolGroup",
+     "aplProtocolGroup","amlProtocolGroup","allRiskGroup"].forEach(clearActive);
+
+    if (d === "ALL")         show("allSection");
+    if (d === "ALL_relapse") show("allRelapseSection");
+    if (d === "infantile") { show("infantileSection"); show("ageRow"); }
+    if (d === "APL")         show("aplSection");
+    if (d === "AML")       { show("amlSection"); show("ageRowAML"); }
+    if (d === "burkitt")     show("burkittSection");
   }
 
-  function selectRisk(r) {
-    selectedRisk = r;
-    toggleActive("allRiskGroup", r === "low_risk" ? 0 : r === "standard_risk" ? 1 : 2);
+  function selectProtocol(p) {
+    selectedProtocol_ = p;
+    if (p === "ALL_consolidation") show("allConsolidationRisk");
+    else { hide("allConsolidationRisk"); selectedRisk = null; }
+    ["allProtocolGroup","allRelapseProtocolGroup","infantileProtocolGroup",
+     "aplProtocolGroup","amlProtocolGroup"].forEach(g => {
+      const el = document.getElementById(g);
+      if (!el) return;
+      el.querySelectorAll("button").forEach(b => {
+        b.classList.toggle("active", b.getAttribute("onclick").includes(`'${p}'`));
+      });
+    });
+  }
+
+  function selectRisk(r_) {
+    selectedRisk = r_;
+    toggleActive("allRiskGroup", r_ === "low_risk" ? 0 : r_ === "standard_risk" ? 1 : 2);
   }
 
   function selectBurkittGroup(g) {
@@ -453,13 +457,9 @@
     const btns = document.getElementById("burkittCycleGroup").querySelectorAll("button");
     btns.forEach(b => b.classList.remove("active"));
     const map = {
-      COPADM3_cycle_1: 0,
-      COPADM3_cycle_2: 1,
-      COPADM8_cycle_1: 2,
-      COPADM8_cycle_2: 3,
-      CYM:  4,
-      CYVE: 5,
-      COP:  6
+      COPADM3_cycle_1:0, COPADM3_cycle_2:1,
+      COPADM8_cycle_1:2, COPADM8_cycle_2:3,
+      CYM:4, CYVE:5, COP:6
     };
     if (map[c] !== undefined) btns[map[c]].classList.add("active");
   }
@@ -469,133 +469,305 @@
     toggleActive("rituximabGroup", val ? 0 : 1);
   }
 
-  function toggleActive(groupId, index) {
-    const btns = document.getElementById(groupId).querySelectorAll("button");
-    btns.forEach((b, i) => b.classList.toggle("active", i === index));
+  function show(id) { document.getElementById(id).classList.remove("hidden"); }
+  function hide(id) { document.getElementById(id).classList.add("hidden"); }
+  function toggleActive(gid, idx) {
+    document.getElementById(gid).querySelectorAll("button")
+      .forEach((b,i) => b.classList.toggle("active", i === idx));
   }
-
-  function clearActive(groupId) {
-    const el = document.getElementById(groupId);
+  function clearActive(gid) {
+    const el = document.getElementById(gid);
     if (el) el.querySelectorAll("button").forEach(b => b.classList.remove("active"));
   }
 
-  // ── Math helpers ─────────────────────────────────────────
   function r(n) { return Math.round(n * 100) / 100; }
-
-  // BSA capped at 2
-  function calcBSA(height, weight) {
-    const raw = Math.sqrt((height * weight) / 3600);
-    return r(Math.min(raw, 2));
-  }
-
-  function makeRow(name, calcStr, value, unit) {
-    return { name, calcStr, value: r(value), unit };
-  }
+  function makeRow(name, calcStr, value, unit) { return { name, calcStr, value: r(value), unit }; }
 
   function renderTable(rows) {
     if (!rows.length) return "<p style='color:#aaa'>No results.</p>";
-    let html = `<table>
-      <thead><tr>
-        <th>Item</th><th>Calculation</th><th>Result</th>
-      </tr></thead><tbody>`;
+    let html = `<table><thead><tr><th>Item</th><th>Calculation</th><th>Result</th></tr></thead><tbody>`;
     rows.forEach(row => {
-      html += `<tr>
-        <td>${row.name}</td>
-        <td>${row.calcStr}</td>
-        <td>${row.value} ${row.unit}</td>
-      </tr>`;
+      if (row.name && row.calcStr === "" && row.value === 0) {
+        html += `<tr><td colspan="3" style="color:#e76f51;font-family:'Trebuchet MS',sans-serif;font-size:11px;padding:6px 10px;">${row.name}</td></tr>`;
+      } else {
+        html += `<tr><td>${row.name}</td><td>${row.calcStr}</td><td>${row.value} ${row.unit}</td></tr>`;
+      }
     });
-    html += "</tbody></table>";
-    return html;
+    return html + "</tbody></table>";
   }
 
   function showError(msg) {
     const eb = document.getElementById("errorBox");
-    eb.textContent = "⚠ " + msg;
-    eb.classList.add("show");
+    eb.textContent = "⚠ " + msg; eb.classList.add("show");
     document.getElementById("resultCard").classList.remove("show");
   }
-
   function clearError() {
     const eb = document.getElementById("errorBox");
-    eb.textContent = "";
-    eb.classList.remove("show");
+    eb.textContent = ""; eb.classList.remove("show");
   }
 
-  // ── Rituximab row (375 × BSA, BSA capped at 2) ───────────
-  function rituximabRow(bsa) {
-    const dose = r(375 * bsa);
-    return makeRow("Rituximab", `375 × ${bsa}`, dose, "mg");
-  }
+  // ── Protocol calculators ──────────────────────────────────
 
-  // ── Protocol calculators ─────────────────────────────────
-
-  function calcALL(bsa, weight, risk) {
-    const pre      = r(1500 * bsa);
-    const bicPre   = r(0.04 * pre);
-    const ketrel   = r(0.04 * weight);
-    let mtx1, mtx23, mtx1Expr, mtx23Expr;
-    if (risk === "low_risk") {
-      mtx1 = r(250 * bsa);  mtx1Expr  = `250 × ${bsa}`;
-      mtx23 = r(2250 * bsa); mtx23Expr = `2250 × ${bsa}`;
-    } else {
-      mtx1 = r(500 * bsa);  mtx1Expr  = `500 × ${bsa}`;
-      mtx23 = r(4500 * bsa); mtx23Expr = `4500 × ${bsa}`;
-    }
-    const post       = r(3000 * bsa);
-    const bicPost    = r(0.04 * post);
-    const purnithol  = r(50 * bsa);
-    const leucovorin = r(15 * bsa);
+  function calcALLInduction(bsa, weight) {
+    const asp = r(10000 * bsa);
+    let vcr = r(1.5 * bsa); let vcrCalc = `1.5 × ${bsa}`;
+    if (vcr > 2) { vcr = 2; vcrCalc += " → capped at 2"; }
+    const doxo   = r(25 * bsa);
+    const solu   = r(10.66 * bsa);
+    const leuc24 = r(5 * bsa);
+    const leuc30 = r(5 * bsa);
     return [
-      makeRow("Prehydration",        `1500 × ${bsa}`,   pre,        "cc"),
-      makeRow("Bicarbonate (pre)",   `0.04 × ${pre}`,    bicPre,     "cc"),
-      makeRow("Ketrel",              `0.04 × ${weight}`, ketrel,     "mg"),
-      makeRow("Methotrexate 1st hr", mtx1Expr,           mtx1,       "mg"),
-      makeRow("Methotrexate 23 hrs", mtx23Expr,          mtx23,      "mg"),
-      makeRow("Posthydration",       `3000 × ${bsa}`,    post,       "cc"),
-      makeRow("Bicarbonate (post)",  `0.04 × ${post}`,   bicPost,    "cc"),
-      makeRow("Purnithol",           `50 × ${bsa}`,      purnithol,  "mg"),
-      makeRow("Calcium Leucovorin",  `15 × ${bsa}`,      leucovorin, "mg"),
+      makeRow("Asparaginase",              `10,000 × ${bsa}`, asp,    "IU"),
+      makeRow("Vincristine (VCR)",         vcrCalc,           vcr,    "mg"),
+      makeRow("Doxorubicin",               `25 × ${bsa}`,     doxo,   "mg"),
+      makeRow("Solumedrol (q8h IV)",       `10.66 × ${bsa}`,  solu,   "mg"),
+      makeRow("Ca-Leucovorin (24h post IT)",`5 × ${bsa}`,     leuc24, "mg"),
+      makeRow("Ca-Leucovorin (30h post IT)",`5 × ${bsa}`,     leuc30, "mg"),
     ];
   }
 
-  function calcOsteosarcoma(bsa, weight) {
+  function calcALLConsolidation(bsa, weight, risk) {
     const pre    = r(1500 * bsa);
     const bicPre = r(0.04 * pre);
     const ketrel = r(0.04 * weight);
-    let dose     = r(12000 * bsa);
-    let doseCalc = `12000 × ${bsa}`;
-    if (dose > 20000) { dose = 20000; doseCalc += " → capped at 20,000"; }
-    const post       = r(3000 * bsa);
-    const bicPost    = r(0.04 * post);
-    const leucovorin = r(15 * bsa);
+    let mtx1, mtx23, mtx1Expr, mtx23Expr;
+    if (risk === "low_risk") {
+      mtx1 = r(250 * bsa);   mtx1Expr  = `250 × ${bsa}`;
+      mtx23 = r(2250 * bsa); mtx23Expr = `2250 × ${bsa}`;
+    } else {
+      mtx1 = r(500 * bsa);   mtx1Expr  = `500 × ${bsa}`;
+      mtx23 = r(4500 * bsa); mtx23Expr = `4500 × ${bsa}`;
+    }
+    const post    = r(3000 * bsa);
+    const bicPost = r(0.04 * post);
+    const purn    = r(50 * bsa);
+    const leuc    = r(15 * bsa);
     return [
-      makeRow("Prehydration",       `1500 × ${bsa}`,   pre,        "cc"),
-      makeRow("Bicarbonate (pre)",  `0.04 × ${pre}`,    bicPre,     "cc"),
-      makeRow("Ketrel",             `0.04 × ${weight}`, ketrel,     "mg"),
-      makeRow("Methotrexate",       doseCalc,           dose,       "mg"),
-      makeRow("Posthydration",      `3000 × ${bsa}`,    post,       "cc"),
-      makeRow("Bicarbonate (post)", `0.04 × ${post}`,   bicPost,    "cc"),
-      makeRow("Calcium Leucovorin", `15 × ${bsa}`,      leucovorin, "mg"),
+      makeRow("Prehydration",        `1500 × ${bsa}`,   pre,    "cc"),
+      makeRow("Bicarbonate (pre)",   `0.04 × ${pre}`,    bicPre, "cc"),
+      makeRow("Ketrel",              `0.04 × ${weight}`, ketrel, "mg"),
+      makeRow("Methotrexate 1st hr", mtx1Expr,           mtx1,   "mg"),
+      makeRow("Methotrexate 23 hrs", mtx23Expr,          mtx23,  "mg"),
+      makeRow("Posthydration",       `3000 × ${bsa}`,    post,   "cc"),
+      makeRow("Bicarbonate (post)",  `0.04 × ${post}`,   bicPost,"cc"),
+      makeRow("Purnithol",           `50 × ${bsa}`,      purn,   "mg"),
+      makeRow("Calcium Leucovorin",  `15 × ${bsa}`,      leuc,   "mg"),
     ];
   }
 
-  function calcCOP(bsa, weight) {
-    const ketrel = r(0.04 * weight);
-    let vin = r(1 * bsa);
-    let vinCalc = `1 × ${bsa}`;
-    if (vin > 2) { vin = 2; vinCalc += " → capped at 2"; }
-    const cyclo      = r(300 * bsa);
-    const mesna      = r(cyclo / 3);
-    const hydration  = r(3000 * bsa);
-    const solumedrol = r(16 * bsa);
+  function calcALLBlock1(bsa) {
+    const mp    = r(60 * bsa);
+    const cyclo = r(1000 * bsa);
+    const mesna = r(cyclo / 3);
+    const araC  = r(75 * bsa);
     return [
-      makeRow("Ketrel",           `0.04 × ${weight}`, ketrel,     "mg"),
-      makeRow("Vincristine",      vinCalc,            vin,        "mg"),
-      makeRow("Cyclophosphamide", `300 × ${bsa}`,     cyclo,      "mg"),
-      makeRow("Mesna",            `${cyclo} / 3`,     mesna,      "mg"),
-      makeRow("Hydration",        `3000 × ${bsa}`,    hydration,  "cc"),
-      makeRow("Solumedrol",       `16 × ${bsa}`,      solumedrol, "mg"),
+      makeRow("6-Mercaptopurine",   `60 × ${bsa}`,   mp,    "mg"),
+      makeRow("Cyclophosphamide",   `1000 × ${bsa}`, cyclo, "mg"),
+      makeRow("Mesna",              `${cyclo} / 3`,  mesna, "mg"),
+      makeRow("Ara-C",              `75 × ${bsa}`,   araC,  "mg"),
+    ];
+  }
+
+  function calcALLBlock2(bsa) {
+    const araC = r(75 * bsa);
+    const mp   = r(60 * bsa);
+    return [
+      makeRow("Ara-C",            `75 × ${bsa}`, araC, "mg"),
+      makeRow("6-Mercaptopurine", `60 × ${bsa}`, mp,   "mg"),
+    ];
+  }
+
+  function calcAntiPCP(weight) {
+    const dose = r(5 * weight);
+    return [ makeRow("Sulfamethoxazole-TMP (per dose q12h)", `5 × ${weight}`, dose, "mg") ];
+  }
+
+  function calcR16(bsa, weight) {
+    const solu = r(10.66 * bsa);
+    const smt  = r(5 * weight);
+    let vcr = r(1.5 * bsa); let vcrCalc = `1.5 × ${bsa}`;
+    if (vcr > 2) { vcr = 2; vcrCalc += " → capped at 2"; }
+    const mito = r(12 * bsa);
+    const doxo = r(40 * bsa);
+    const asp  = r(10000 * bsa);
+    return [
+      makeRow("Solumedrol (q8h)",           `10.66 × ${bsa}`,  solu, "mg"),
+      makeRow("Sulfamethoxazole-TMP (q12h)", `5 × ${weight}`,   smt,  "mg"),
+      makeRow("Vincristine (weekly)",        vcrCalc,           vcr,  "mg"),
+      makeRow("Mitoxantrone",               `12 × ${bsa}`,     mito, "mg"),
+      makeRow("Doxorubicin",                `40 × ${bsa}`,     doxo, "mg"),
+      makeRow("Asparaginase",               `10,000 × ${bsa}`, asp,  "IU"),
+    ];
+  }
+
+  function calcIM1(bsa) {
+    let vcr = r(1.5 * bsa); let vcrCalc = `1.5 × ${bsa}`;
+    if (vcr > 2) { vcr = 2; vcrCalc += " → capped at 2"; }
+    const cyclo = r(1000 * bsa);
+    return [
+      makeRow("Vincristine (day 1 only)",   vcrCalc,          vcr,   "mg"),
+      makeRow("Cyclophosphamide (day 1)",   `1000 × ${bsa}`,  cyclo, "mg"),
+      makeRow("Cyclophosphamide (day 2)",   `1000 × ${bsa}`,  cyclo, "mg"),
+    ];
+  }
+
+  function calcIM2(bsa) {
+    const mtx  = r(5000 * bsa);
+    const leuc = r(15 * bsa);
+    const asp  = r(10000 * bsa);
+    return [
+      makeRow("Methotrexate",                  `5000 × ${bsa}`,   mtx,  "mg"),
+      makeRow("Leucovorin",                    `15 × ${bsa}`,     leuc, "mg"),
+      makeRow("Asparaginase (days 2, 4, 6)",   `10,000 × ${bsa}`, asp,  "IU"),
+    ];
+  }
+
+  function calcIM3(bsa) {
+    const dexa = r(20 * bsa);
+    const araC = r(2000 * bsa);
+    const etop = r(100 * bsa);
+    return [
+      makeRow("Dexamethasone oral (6 days)",      `20 × ${bsa}`,   dexa, "mg"),
+      makeRow("Ara-C q12h (days 1–2)",            `2000 × ${bsa}`, araC, "mg"),
+      makeRow("Etoposide (5 doses q12h)",         `100 × ${bsa}`,  etop, "mg"),
+    ];
+  }
+
+  function calcFLAG(bsa) {
+    const fluda = r(16 * bsa);
+    const araC  = r(2000 * bsa);
+    const mito  = r(10 * bsa);
+    return [
+      makeRow("Fludarabine per dose (days 1–4)",          `16 × ${bsa}`,   fluda, "mg"),
+      makeRow("Ara-C once daily 4h post-Fluda (days 1–4)",`2000 × ${bsa}`, araC,  "mg"),
+      makeRow("Mitoxantrone 8h post-AraC",                `10 × ${bsa}`,   mito,  "mg"),
+    ];
+  }
+
+  function calcInfantileInduction(bsa, weight, ageGroup) {
+    const factor = ageGroup === "lt6" ? 2/3 : ageGroup === "6to12" ? 3/4 : 1;
+    const factorLabel = ageGroup === "lt6" ? "2/3" : ageGroup === "6to12" ? "3/4" : "full dose";
+
+    const pred = r(60 * bsa);
+    const dexa = r(6 * bsa);
+
+    const vcrFull  = Math.min(r(1.5 * bsa), 2);
+    const vcrAdj   = r(vcrFull * factor);
+    const doxoFull = r(25 * bsa);
+    const doxoAdj  = r(doxoFull * factor);
+    const araCFull = r(75 * bsa);
+    const araCAdj  = r(araCFull * factor);
+    const aspFull  = r(10000 * bsa);
+    const aspAdj   = r(aspFull * factor);
+
+    return {
+      rows: [
+        makeRow("Prednisone (days 1–7)",                  `60 × ${bsa}`,                pred,    "mg"),
+        makeRow("Dexamethasone (days 8–28)",               `6 × ${bsa}`,                dexa,    "mg"),
+        makeRow("Vincristine – full dose",                 `1.5 × ${bsa} capped at 2`,  vcrFull, "mg"),
+        makeRow(`Vincristine – adjusted (× ${factorLabel})`,`${vcrFull} × ${factorLabel}`, vcrAdj, "mg"),
+        makeRow("Doxorubicin – full dose",                 `25 × ${bsa}`,               doxoFull,"mg"),
+        makeRow(`Doxorubicin – adjusted (× ${factorLabel})`,`${doxoFull} × ${factorLabel}`,doxoAdj,"mg"),
+        makeRow("Ara-C – full dose",                       `75 × ${bsa}`,               araCFull,"mg"),
+        makeRow(`Ara-C – adjusted (× ${factorLabel})`,     `${araCFull} × ${factorLabel}`,araCAdj,"mg"),
+        makeRow("Asparaginase – full dose",                `10,000 × ${bsa}`,           aspFull, "IU"),
+        makeRow(`Asparaginase – adjusted (× ${factorLabel})`,`${aspFull} × ${factorLabel}`,aspAdj,"IU"),
+      ],
+      note: `Age group selected: ${
+        ageGroup === "lt6" ? "< 6 months → doses × 2/3" :
+        ageGroup === "6to12" ? "6–12 months → doses × 3/4" :
+        "> 12 months → full doses"
+      }`
+    };
+  }
+
+  function calcMaram(bsa) {
+    const mp       = r(25 * bsa);
+    const mtxTotal = r(5000 * bsa);
+    const mtx30    = r(0.10 * mtxTotal);
+    const mtx23    = r(0.90 * mtxTotal);
+    const leuc36   = r(15 * bsa);
+    const leuc42   = r(15 * bsa);
+    const leuc48   = r(15 * bsa);
+    const araC     = r(3000 * bsa);
+    const asp      = r(10000 * bsa);
+    return [
+      makeRow("6-Mercaptopurine (days 1–14)",              `25 × ${bsa}`,         mp,       "mg"),
+      makeRow("Methotrexate total (days 1–8)",             `5000 × ${bsa}`,       mtxTotal, "mg"),
+      makeRow("MTX – 1st 30 min (10%)",                    `10% × ${mtxTotal}`,   mtx30,    "mg"),
+      makeRow("MTX – next 23.5 hrs (90%)",                 `90% × ${mtxTotal}`,   mtx23,    "mg"),
+      makeRow("Leucovorin at hour 36",                     `15 × ${bsa}`,         leuc36,   "mg"),
+      makeRow("Leucovorin at hour 42",                     `15 × ${bsa}`,         leuc42,   "mg"),
+      makeRow("Leucovorin at hour 48",                     `15 × ${bsa}`,         leuc48,   "mg"),
+      makeRow("Ara-C (3h infusion, 2×/day, days 15,16,22,23)", `3000 × ${bsa}`,  araC,     "mg"),
+      makeRow("Asparaginase",                              `10,000 × ${bsa}`,     asp,      "IU"),
+    ];
+  }
+
+  function calcAPLInduction(bsa) {
+    const atra = r(12.5 * bsa);
+    const doxo = r(30 * bsa);
+    return [
+      makeRow("ATRA per dose q12h",          `12.5 × ${bsa}`, atra, "mg"),
+      makeRow("Doxorubicin (days 1, 3, 5)",  `30 × ${bsa}`,   doxo, "mg"),
+    ];
+  }
+
+  function calcAMLMitoAraC(bsa, weight, ageGroup) {
+    const useKg = ageGroup === "lt12";
+    if (useKg) {
+      const mito = r(0.4 * weight);
+      const araC = r(3.3 * weight);
+      const doxo = r(48 * bsa);
+      return [
+        makeRow("⚠ Kg-based dosing (< 12 months / < 10 kg / BSA < 0.5 m²)", "", 0, ""),
+        makeRow("Mitoxantrone per dose (days 1–4)",     `0.4 × ${weight} kg`, mito, "mg"),
+        makeRow("Ara-C per dose q12h (days 1–10)",      `3.3 × ${weight} kg`, araC, "mg"),
+        makeRow("Doxorubicin if no Mito (days 1,3,5)",  `48 × ${bsa}`,        doxo, "mg"),
+      ];
+    } else {
+      const mito = r(12 * bsa);
+      const araC = r(100 * bsa);
+      const doxo = r(48 * bsa);
+      return [
+        makeRow("Mitoxantrone per dose (days 1–4)",    `12 × ${bsa}`,  mito, "mg"),
+        makeRow("Ara-C per dose q12h (days 1–10)",     `100 × ${bsa}`, araC, "mg"),
+        makeRow("Doxorubicin if no Mito (days 1,3,5)", `48 × ${bsa}`,  doxo, "mg"),
+      ];
+    }
+  }
+
+  function calcAMLHDAraC(bsa, weight, ageGroup) {
+    const useKg = ageGroup === "lt12";
+    if (useKg) {
+      const araC = r(100 * weight);
+      return [
+        makeRow("⚠ Kg-based dosing (< 12 months / < 10 kg / BSA < 0.5 m²)", "", 0, ""),
+        makeRow("Ara-C per dose q12h (days 1, 3, 5)", `100 × ${weight} kg`, araC, "mg"),
+      ];
+    } else {
+      const araC = r(3000 * bsa);
+      return [
+        makeRow("Ara-C per dose q12h (days 1, 3, 5)", `3000 × ${bsa}`, araC, "mg"),
+      ];
+    }
+  }
+
+  function calcCOP(bsa, weight) {
+    const ketrel  = r(0.04 * weight);
+    let vin = r(1 * bsa); let vinCalc = `1 × ${bsa}`;
+    if (vin > 2) { vin = 2; vinCalc += " → capped at 2"; }
+    const cyclo    = r(300 * bsa);
+    const mesna    = r(cyclo / 3);
+    const hydration= r(3000 * bsa);
+    const solu     = r(16 * bsa);
+    return [
+      makeRow("Ketrel",           `0.04 × ${weight}`, ketrel,    "mg"),
+      makeRow("Vincristine",      vinCalc,             vin,       "mg"),
+      makeRow("Cyclophosphamide", `300 × ${bsa}`,      cyclo,     "mg"),
+      makeRow("Mesna",            `${cyclo} / 3`,      mesna,     "mg"),
+      makeRow("Hydration",        `3000 × ${bsa}`,     hydration, "cc"),
+      makeRow("Solumedrol",       `16 × ${bsa}`,       solu,      "mg"),
     ];
   }
 
@@ -637,14 +809,11 @@
     ];
   }
 
-  // COPADM cycle 1 — shared by both COPADM3 and COPADM8
-  // mtxDose: 3000 for COPADM3, 8000 for COPADM8
   function calcCOPADM_C1(bsa, weight, mtxDose) {
     const pre     = r(1500 * bsa);
     const bicPre  = r(0.04 * pre);
     const ketrel  = r(0.04 * weight);
-    let vin = r(2 * bsa);
-    let vinCalc = `2 × ${bsa}`;
+    let vin = r(2 * bsa); let vinCalc = `2 × ${bsa}`;
     if (vin > 2) { vin = 2; vinCalc += " → capped at 2"; }
     const mtx     = r(mtxDose * bsa);
     const solu    = r(16 * bsa);
@@ -670,39 +839,62 @@
     ];
   }
 
-  // COPADM cycle 2 — all cycle 1 parameters with cyclophosphamide 500 instead of 250
   function calcCOPADM_C2(bsa, weight, mtxDose) {
     const pre     = r(1500 * bsa);
     const bicPre  = r(0.04 * pre);
     const ketrel  = r(0.04 * weight);
-    let vin = r(2 * bsa);
-    let vinCalc = `2 × ${bsa}`;
+    let vin = r(2 * bsa); let vinCalc = `2 × ${bsa}`;
     if (vin > 2) { vin = 2; vinCalc += " → capped at 2"; }
     const mtx     = r(mtxDose * bsa);
     const solu    = r(16 * bsa);
     const post    = r(3000 * bsa);
     const bicPost = r(0.04 * post);
-    const cyclo   = r(500 * bsa);   // amended: 500 instead of 250
+    const cyclo   = r(500 * bsa);
     const mesna   = r(cyclo / 3);
     const doxo    = r(60 * bsa);
     const leuc    = r(15 * bsa);
     return [
-      makeRow("Prehydration",                `1500 × ${bsa}`,      pre,     "cc"),
-      makeRow("Bicarbonate (pre)",           `0.04 × ${pre}`,       bicPre,  "cc"),
-      makeRow("Ketrel",                      `0.04 × ${weight}`,    ketrel,  "mg"),
-      makeRow("Vincristine",                 vinCalc,               vin,     "mg"),
-      makeRow("Methotrexate",                `${mtxDose} × ${bsa}`, mtx,     "mg"),
-      makeRow("Solumedrol",                  `16 × ${bsa}`,         solu,    "mg"),
-      makeRow("Posthydration",               `3000 × ${bsa}`,       post,    "cc"),
-      makeRow("Bicarbonate (post)",          `0.04 × ${post}`,      bicPost, "cc"),
-      makeRow("Cyclophosphamide (amended)",  `500 × ${bsa}`,        cyclo,   "mg"),
-      makeRow("Mesna",                       `${cyclo} / 3`,        mesna,   "mg"),
-      makeRow("Doxorubicin",                 `60 × ${bsa}`,         doxo,    "mg"),
-      makeRow("Calcium Leucovorin",          `15 × ${bsa}`,         leuc,    "mg"),
+      makeRow("Prehydration",               `1500 × ${bsa}`,      pre,     "cc"),
+      makeRow("Bicarbonate (pre)",          `0.04 × ${pre}`,       bicPre,  "cc"),
+      makeRow("Ketrel",                     `0.04 × ${weight}`,    ketrel,  "mg"),
+      makeRow("Vincristine",                vinCalc,               vin,     "mg"),
+      makeRow("Methotrexate",               `${mtxDose} × ${bsa}`, mtx,     "mg"),
+      makeRow("Solumedrol",                 `16 × ${bsa}`,         solu,    "mg"),
+      makeRow("Posthydration",              `3000 × ${bsa}`,       post,    "cc"),
+      makeRow("Bicarbonate (post)",         `0.04 × ${post}`,      bicPost, "cc"),
+      makeRow("Cyclophosphamide (amended)", `500 × ${bsa}`,        cyclo,   "mg"),
+      makeRow("Mesna",                      `${cyclo} / 3`,        mesna,   "mg"),
+      makeRow("Doxorubicin",                `60 × ${bsa}`,         doxo,    "mg"),
+      makeRow("Calcium Leucovorin",         `15 × ${bsa}`,         leuc,    "mg"),
     ];
   }
 
-  // ── Main calculate ───────────────────────────────────────
+  function calcOsteosarcoma(bsa, weight) {
+    const pre     = r(1500 * bsa);
+    const bicPre  = r(0.04 * pre);
+    const ketrel  = r(0.04 * weight);
+    let dose = r(12000 * bsa); let doseCalc = `12000 × ${bsa}`;
+    if (dose > 20000) { dose = 20000; doseCalc += " → capped at 20,000"; }
+    const post    = r(3000 * bsa);
+    const bicPost = r(0.04 * post);
+    const leuc    = r(15 * bsa);
+    return [
+      makeRow("Prehydration",       `1500 × ${bsa}`,   pre,     "cc"),
+      makeRow("Bicarbonate (pre)",  `0.04 × ${pre}`,    bicPre,  "cc"),
+      makeRow("Ketrel",             `0.04 × ${weight}`, ketrel,  "mg"),
+      makeRow("Methotrexate",       doseCalc,           dose,    "mg"),
+      makeRow("Posthydration",      `3000 × ${bsa}`,    post,    "cc"),
+      makeRow("Bicarbonate (post)", `0.04 × ${post}`,   bicPost, "cc"),
+      makeRow("Calcium Leucovorin", `15 × ${bsa}`,      leuc,    "mg"),
+    ];
+  }
+
+  function rituximabRow(bsa) {
+    const dose = r(375 * bsa);
+    return makeRow("Rituximab", `375 × ${bsa}`, dose, "mg");
+  }
+
+  // ── MAIN CALCULATE ────────────────────────────────────────
   function calculate() {
     clearError();
     const weight = parseFloat(document.getElementById("weight").value);
@@ -711,70 +903,105 @@
     if (!weight || !height || weight <= 0 || height <= 0) {
       showError("Please enter valid weight and height."); return;
     }
-    if (!selectedProtocol) {
-      showError("Please select a protocol."); return;
-    }
+    if (!selectedDisease) { showError("Please select a disease."); return; }
 
     const rawBSA = r(Math.sqrt((height * weight) / 3600));
-    const bsa    = Math.min(rawBSA, 2);   // capped at 2
-
+    const bsa    = Math.min(rawBSA, 2);
     const capNote = rawBSA > 2 ? `\nNote: Raw BSA ${rawBSA} m² → capped at 2.00 m²` : "";
 
     const steps =
       `Formula     : BSA = √((height × weight) / 3600)\n` +
       `Substitution: BSA = √((${height} × ${weight}) / 3600)\n` +
-      `Intermediate: (${height} × ${weight}) / 3600 = ${r((height * weight) / 3600)}\n` +
-      `Raw BSA     : ${rawBSA} m²` + capNote + `\n` +
+      `Result      : ${rawBSA} m²` + capNote + `\n` +
       `Used BSA    : ${bsa} m²`;
 
     let rows = [];
+    let noteText = "";
 
-    if (selectedProtocol === "ALL") {
-      if (!selectedRisk) { showError("Please select a risk level for ALL."); return; }
-      rows = calcALL(bsa, weight, selectedRisk);
+    if (selectedDisease === "ALL") {
+      if (!selectedProtocol_) { showError("Please select a protocol."); return; }
+      if      (selectedProtocol_ === "ALL_induction")    rows = calcALLInduction(bsa, weight);
+      else if (selectedProtocol_ === "ALL_consolidation") {
+        if (!selectedRisk) { showError("Please select a risk level."); return; }
+        rows = calcALLConsolidation(bsa, weight, selectedRisk);
+      }
+      else if (selectedProtocol_ === "ALL_block1")   rows = calcALLBlock1(bsa);
+      else if (selectedProtocol_ === "ALL_block2")   rows = calcALLBlock2(bsa);
+      else if (selectedProtocol_ === "ALL_antipcj")  rows = calcAntiPCP(weight);
 
-    } else if (selectedProtocol === "osteosarcoma") {
-      rows = calcOsteosarcoma(bsa, weight);
+    } else if (selectedDisease === "ALL_relapse") {
+      if (!selectedProtocol_) { showError("Please select a protocol."); return; }
+      if      (selectedProtocol_ === "R16")  rows = calcR16(bsa, weight);
+      else if (selectedProtocol_ === "IM1")  rows = calcIM1(bsa);
+      else if (selectedProtocol_ === "IM2")  rows = calcIM2(bsa);
+      else if (selectedProtocol_ === "IM3")  rows = calcIM3(bsa);
+      else if (selectedProtocol_ === "FLAG") rows = calcFLAG(bsa);
 
-    } else if (selectedProtocol === "burkitt_lymphoma") {
-      if (!selectedCycle) { showError("Please select a treatment cycle for Burkitt Lymphoma."); return; }
+    } else if (selectedDisease === "infantile") {
+      if (!selectedProtocol_) { showError("Please select a protocol."); return; }
+      if (selectedProtocol_ === "infantile_induction") {
+        const ageGroup = document.getElementById("ageGroup").value;
+        if (!ageGroup) { showError("Please select the age group."); return; }
+        const result = calcInfantileInduction(bsa, weight, ageGroup);
+        rows = result.rows; noteText = result.note;
+      } else if (selectedProtocol_ === "maram") {
+        rows = calcMaram(bsa);
+      }
 
-      if      (selectedCycle === "COP")            rows = calcCOP(bsa, weight);
-      else if (selectedCycle === "CYM")            rows = calcCYM(bsa, weight);
-      else if (selectedCycle === "CYVE")           rows = calcCYVE(bsa, weight);
+    } else if (selectedDisease === "APL") {
+      if (!selectedProtocol_) { showError("Please select a protocol."); return; }
+      rows = calcAPLInduction(bsa);
+
+    } else if (selectedDisease === "AML") {
+      if (!selectedProtocol_) { showError("Please select a protocol."); return; }
+      const ageGroupAML = document.getElementById("ageGroupAML").value;
+      if (!ageGroupAML) { showError("Please select the age group."); return; }
+      if      (selectedProtocol_ === "AML_mito_arac") rows = calcAMLMitoAraC(bsa, weight, ageGroupAML);
+      else if (selectedProtocol_ === "AML_hd_arac")   rows = calcAMLHDAraC(bsa, weight, ageGroupAML);
+
+    } else if (selectedDisease === "burkitt") {
+      if (!selectedCycle) { showError("Please select a treatment cycle."); return; }
+      if      (selectedCycle === "COP")             rows = calcCOP(bsa, weight);
+      else if (selectedCycle === "CYM")             rows = calcCYM(bsa, weight);
+      else if (selectedCycle === "CYVE")            rows = calcCYVE(bsa, weight);
       else if (selectedCycle === "COPADM3_cycle_1") rows = calcCOPADM_C1(bsa, weight, 3000);
       else if (selectedCycle === "COPADM3_cycle_2") rows = calcCOPADM_C2(bsa, weight, 3000);
       else if (selectedCycle === "COPADM8_cycle_1") rows = calcCOPADM_C1(bsa, weight, 8000);
       else if (selectedCycle === "COPADM8_cycle_2") rows = calcCOPADM_C2(bsa, weight, 8000);
+      if (selectedRituximab) rows.push(rituximabRow(bsa));
 
-      // Rituximab: 375 × BSA (BSA already capped at 2)
-      if (selectedRituximab) {
-        rows.push(rituximabRow(bsa));
-      }
+    } else if (selectedDisease === "osteosarcoma") {
+      rows = calcOsteosarcoma(bsa, weight);
     }
 
     document.getElementById("stepsBox").textContent = steps;
-    document.getElementById("tableWrap").innerHTML  = renderTable(rows);
+    const nb = document.getElementById("noteBox");
+    if (noteText) { nb.textContent = "ℹ️ " + noteText; nb.classList.remove("hidden"); }
+    else { nb.classList.add("hidden"); }
+    document.getElementById("tableWrap").innerHTML = renderTable(rows);
     document.getElementById("resultCard").classList.add("show");
     document.getElementById("resultCard").scrollIntoView({ behavior: "smooth" });
   }
 
-  // ── Reset ────────────────────────────────────────────────
+  // ── RESET ─────────────────────────────────────────────────
   function resetAll() {
     document.getElementById("weight").value = "";
     document.getElementById("height").value = "";
-    selectedProtocol     = null;
-    selectedRisk         = null;
-    selectedBurkittGroup = null;
-    selectedCycle        = null;
-    selectedRituximab    = false;
+    document.getElementById("ageGroup").value = "";
+    document.getElementById("ageGroupAML").value = "";
+    selectedDisease = null; selectedProtocol_ = null;
+    selectedRisk = null; selectedBurkittGroup = null;
+    selectedCycle = null; selectedRituximab = false;
     document.getElementById("bsaDisplay").classList.remove("show");
-    document.getElementById("allRiskSection").classList.add("hidden");
-    document.getElementById("burkittSection").classList.add("hidden");
+    ["allSection","allRelapseSection","infantileSection","aplSection",
+     "amlSection","burkittSection","allConsolidationRisk","ageRow","ageRowAML"]
+      .forEach(hide);
     document.getElementById("resultCard").classList.remove("show");
+    document.getElementById("noteBox").classList.add("hidden");
     clearError();
-    ["protocolGroup","allRiskGroup","burkittGroupBtns","burkittCycleGroup","rituximabGroup"]
-      .forEach(clearActive);
+    ["diseaseGroup","allProtocolGroup","allRelapseProtocolGroup","infantileProtocolGroup",
+     "aplProtocolGroup","amlProtocolGroup","allRiskGroup","burkittGroupBtns",
+     "burkittCycleGroup","rituximabGroup"].forEach(clearActive);
   }
 </script>
 </body>
